@@ -1,6 +1,8 @@
 import pandas as pd
 import descriptive_statistics
 import text_analysis
+import time_series_analysis
+
 
 def main():
     try:
@@ -15,6 +17,9 @@ def main():
         text_analysis.perform_sentiment_analysis(df)
         text_analysis.identify_common_keywords(df)
 
+        time_series_analysis.analyze_publication_frequency(df)
+        time_series_analysis.analyze_publishing_times(df)
+        
     except FileNotFoundError:
         print("Error: The dataset file 'raw_analyst_ratings.csv' was not found.")
     except Exception as e:
