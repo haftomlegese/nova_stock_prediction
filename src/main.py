@@ -2,7 +2,7 @@ import pandas as pd
 import descriptive_statistics
 import text_analysis
 import time_series_analysis
-
+import publisher_analysis
 
 def main():
     try:
@@ -19,6 +19,8 @@ def main():
 
         time_series_analysis.analyze_publication_frequency(df)
         time_series_analysis.analyze_publishing_times(df)
+        
+        publisher_analysis.analyze_publisher_contribution(df)
         
     except FileNotFoundError:
         print("Error: The dataset file 'raw_analyst_ratings.csv' was not found.")
