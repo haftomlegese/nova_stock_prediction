@@ -27,7 +27,7 @@ This repository contains data analysis projects focusing on financial news and s
 ```
 
 ## Files Overview
-* notebook/EDA.ipynb: Jupyter Notebook containing   exploratory data analysis for the raw_analyst_rating dataset.
+* notebook/nova_eda.ipynb: Jupyter Notebook containing exploratory data analysis, Quantitative analysis and Correlation between news and stock movement for the raw_analyst_rating dataset.
 * src/main.py: python file containing exploratory data analysis for the raw_analyst_rating dataset.
 * data/:
     + raw_analyst_ratings.csv
